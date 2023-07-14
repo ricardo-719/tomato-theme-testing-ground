@@ -5,6 +5,12 @@
  * @package tomatotheme
  */
 
+ if ( !defined( 'TOMATOTHEME_DIR_PATH' ) ) {
+   define( 'TOMATOTHEME_DIR_PATH', untrailingslashit( get_template_directory() ) );
+ }
+
+ require_once TOMATOTHEME_DIR_PATH . '/includes/helpers/autoloader.php';
+
  function tomatotheme_enqueue_scripts() {
 
     //Register styles
