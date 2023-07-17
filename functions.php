@@ -11,6 +11,13 @@
 
  require_once TOMATOTHEME_DIR_PATH . '/includes/helpers/autoloader.php';
 
+
+ function tomatotheme_get_theme_instance() {
+  \TOMATOTHEME\Includes\TOMATOTHEME::get_instance();
+ }
+
+ tomatotheme_get_theme_instance();
+
  function tomatotheme_enqueue_scripts() {
 
     //Register styles
