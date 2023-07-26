@@ -9,11 +9,11 @@
    define( 'TOMATOTHEME_DIR_PATH', untrailingslashit( get_template_directory() ) );
  }
 
- require_once TOMATOTHEME_DIR_PATH . '/includes/helpers/autoloader.php';
+ require_once TOMATOTHEME_DIR_PATH . '/inc/helpers/autoloader.php';
 
 
  function tomatotheme_get_theme_instance() {
-  \TOMATOTHEME\Includes\TOMATOTHEME::get_instance();
+  \TOMATOTHEME\Inc\TOMATOTHEME::get_instance();
  }
 
  tomatotheme_get_theme_instance();

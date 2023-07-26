@@ -3,7 +3,7 @@
  * 
  */
 
- namespace tomatotheme\Includes\Traits;
+ namespace tomatotheme\Inc\Traits;
 
  trait Singleton {
     public function __construct() {

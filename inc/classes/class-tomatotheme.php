@@ -5,9 +5,9 @@
  * @package tomatotheme
 */
 
-namespace TOMATOTHEME\Includes;
+namespace TOMATOTHEME\Inc;
 
-use TOMATOTHEME\Includes\Traits\Singleton;
+use TOMATOTHEME\Inc\Traits\Singleton;
 
 class tomatotheme {
     use Singleton;

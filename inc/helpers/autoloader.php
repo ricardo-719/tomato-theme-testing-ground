@@ -5,7 +5,7 @@
  * @package tomatotheme
  */
 
- namespace TOMATOTHEME\Includes\Helpers;
+ namespace TOMATOTHEME\Inc\Helpers;
 
  /**
   * Autoloader function.
@@ -45,7 +45,7 @@
     $directory = '';
     $file_name = '';
 
-    if ( 'includes' === $path[0] ) {
+    if ( 'inc' === $path[0] ) {
         switch ( $path[1] ) {
             case 'traits':
                 $directory = 'traits';
@@ -56,7 +56,7 @@
             case 'blocks':
                 /**
                  * If there is a class name provided for specific directory then load that,
-                 * otherwise find in includes/ directory.
+                 * otherwise find in inc/ directory.
                  */
                 if ( ! empty( $path[2] ) ) {
                     $directory = sprintf( 'classes/%s', $path[1] );
@@ -69,7 +69,7 @@
                 break;
         }
 
-        $resource_path = sprintf('%s/includes/%s/%s.php', untrailingslashit( 'TOMATOTHEME_DIR_PATH' ), $directory, $file_name );
+        $resource_path = sprintf('%s/inc/%s/%s.php', untrailingslashit( 'TOMATOTHEME_DIR_PATH' ), $directory, $file_name );
 
     }
 
@@ -85,4 +85,4 @@
 
   }
 
-  spl_autoload_register( '\TOMATOTHEME\Includes\Helpers\autoloader' );
+  spl_autoload_register( '\TOMATOTHEME\Inc\Helpers\autoloader' );
